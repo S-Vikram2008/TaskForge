@@ -1,0 +1,734 @@
+
+        a{
+            text-decoration: none;
+        }
+
+        body{
+            background-color: black;
+            color: rgb(221, 212, 212);
+            
+            
+        }
+
+        
+        .main-body{
+            
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        
+
+        .channel{
+            font-size: 30px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #E8445F, #7668D9, #4989FF);
+            background-clip: text;
+            color: transparent;
+        }
+
+        
+        button{
+            border: none;
+            width: 220px;
+            height: 40px;
+            cursor: pointer;
+            background-color: transparent;
+            color:rgb(221, 212, 212);
+            text-align: left;
+            padding: 10px;
+            
+        }
+
+        button:hover{
+            background-color: rgb(63, 63, 234);
+            border-radius: 10px;
+        }
+
+        
+
+        
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .banner-welcome{
+            font-size: 30px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #E8445F, #7668D9, #4989FF);
+            background-clip: text;
+            color: transparent;
+            
+            
+        }
+        .banner-text{
+            font-size: 16px;
+            color: rgb(202, 194, 194);
+            font-weight: 600;
+        }
+
+        .task-info{
+            display: flex;
+            gap: 20px;
+        }
+
+        .total{
+            width: 390px;
+            background: linear-gradient(135deg, #F63D5F, #CC3079);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .completed{
+            width: 390px;
+            background: linear-gradient(135deg, #18C760, #079668);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .pending{
+            width: 390px;
+            background: linear-gradient(135deg, #FA9813, #CD890C);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .number{
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        .percent{
+            border-radius: 10px;
+            background-color:#171923;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        .recent-info,.priority-info,.high-priority-info,.upcoming-tasks-info{
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        .recent-items,.high-priority-items{
+            display: flex;
+            background-color: #171923;
+            width:840px;
+           
+            text-align: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        
+        .recent-list,.high-priority-list,.upcoming-tasks-list{
+            margin: 30px;
+        }
+        
+        .container-up{
+            display: flex;
+            gap: 25px;
+            width: 1282px;
+            
+            
+        }
+
+        .priority-items{
+            display: flex;
+            width: 410px;
+            background-color:#171923;
+            border-radius: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .priority-list{
+            margin: 80px;
+            font-size: 15px;
+        }
+
+        
+
+        .container2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-down{
+            display: flex;
+            gap: 10px;
+        }
+
+        .upcoming-tasks{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .upcoming-tasks-items{
+            display: flex;
+            width: 430px;
+            background-color:#171923;
+            text-align: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        
+        .upcoming-tasks-list{
+            margin: 50px;
+        }
+
+        button.add-tasks{
+            width: 87px;
+            border-radius: 12px;
+            background-color:#8B5CF6;
+            padding-left: 15px;
+            cursor: pointer;
+            font-weight: 500;
+            
+        }
+
+        
+
+        .add-task-btn{
+            background-color: #8B5CF6;
+            color: white;
+            border-radius: 10px;
+            width: 120px;
+            text-align: center;
+        }
+
+        .cancel-btn{
+            background-color:red; 
+            width: 120px;
+            border-radius:10px;
+            color: white;
+            text-align: center;
+        }
+
+        .add-task-btn:hover{
+            box-shadow: 0 0 10px #8B5CF6, 0 0 25px rgba(139, 92, 246, 0.7);
+        }
+
+        .cancel-btn:hover{
+            box-shadow: 0 0 15px 2px rgba(255, 0, 0, 0.6);
+            background-color: red;
+        }
+
+        .status-duedate{
+            display: flex;
+            gap: 18px;
+        }
+
+        .priority-btn{
+            width: 155px;
+            height: 44px;
+            border-radius: 10px;
+            background-color: #0F111A;
+            border: 1.5px solid #8B5CF6;
+        }
+        .priority-buttons{
+            display: flex;
+            gap: 10px;
+        }
+
+        #task-title{
+            width: 540px;
+            height: 12px;
+            background-color: #0F111A;
+            border: 1px solid #2D3142;
+            border-radius: 10px;
+            padding: 14px;
+            color: #F4F4F5;
+        }
+        
+        
+        #description{
+            width: 540px;
+            height: 84px;
+            background-color: #0F111A;
+            border: 1px solid #2D3142;
+            border-radius: 10px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 14px;
+            padding-right: 14px;
+            color: #F4F4F5;
+        }
+
+        .status,.duedate{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .status-duedate{
+            display: flex;
+        }
+
+        .duedate,#status{
+            font-size: 18px;
+            color: #D4D4D8;
+        }
+
+        .dropdown-status,.menu-date{
+            width: 263px;
+            height: 44px;
+            background-color: #0F111A;
+            border: 1px solid #2D3142;
+            border-radius: 10px;
+            color: #F4F4F5;
+            font-size: 15px;
+            padding-left: 10px;
+            color-scheme: dark
+                
+        }
+
+        .add-task-off{
+            display: none;
+            background-color: #0F111A;
+            width: 600px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .add-task-on{
+            display: flex;
+            position: fixed;
+            inset: 0;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            
+        }
+
+        .box{
+            width: 600px;
+            background-color: #0F111A;
+            padding: 10px;
+        }
+
+        .priority-btn-selected{
+            background-color: #8B5CF6;
+        }
+
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .nav-links{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .dashboard,.task-all,.settings{
+            font-size: 15px;
+            color: #FFFFFF;
+            font-weight: 600;
+            background-color: #172554;
+            border-radius: 15px;
+            padding: 14px 22px;
+            cursor: pointer;
+        }
+
+        .task-details{
+            display: flex;
+            gap: 20px;
+        }
+
+        .error-border {
+            border: 1px solid red !important;
+        }
+        
+        
+
+        
+
+@media (max-width: 1024px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .dashboard,
+    .task-all,
+    .settings {
+        padding: 12px 16px;
+    }
+
+    .task-details {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .total,
+    .completed,
+    .pending {
+        flex: 1 1 250px;
+        width: auto;
+        min-width: 0;
+    }
+
+    .container-up,
+    .container-down {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .container-up > *,
+    .container-down > * {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .recent-items,
+    .high-priority-items,
+    .priority-items,
+    .upcoming-tasks-items {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .recent-list,
+    .high-priority-list,
+    .priority-list,
+    .upcoming-tasks-list {
+        margin: 24px 12px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Add Task modal */
+    .add-task-on {
+        padding: 16px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    #task-title,
+    #description {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .status-duedate {
+        gap: 12px;
+    }
+
+    .status,
+    .duedate {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .dropdown-status,
+    .menu-date {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 12px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .dashboard,
+    .task-all,
+    .settings {
+        flex: 1;
+        text-align: center;
+        font-size: 13px;
+        padding: 12px 8px;
+    }
+
+    button.add-tasks {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-welcome {
+        font-size: 26px;
+    }
+
+    .task-details {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .total,
+    .completed,
+    .pending {
+        width: 100%;
+        flex: none;
+    }
+
+    .container-up,
+    .container-down {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .container-up > *,
+    .container-down > * {
+        width: 100%;
+        flex: none;
+    }
+
+    .recent-items,
+    .high-priority-items,
+    .priority-items,
+    .upcoming-tasks-items {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .priority-list,
+    .recent-list,
+    .high-priority-list,
+    .upcoming-tasks-list {
+        margin: 24px 12px;
+    }
+
+    /* Add Task overlay */
+    .add-task-on {
+        padding: 12px;
+        overflow-y: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 600px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    #task-title,
+    #description {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .priority-buttons {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .priority-btn {
+        flex: 1 1 100px;
+        min-width: 0;
+    }
+
+    /* Keep Status and Due date side by side
+       when sufficient space is available */
+    .status-duedate {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 12px;
+        height: auto;
+    }
+
+    .status,
+    .duedate {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 8px;
+        flex: 1 1 200px;
+        min-width: 0;
+        height: auto;
+        margin: 0;
+    }
+
+    .duedate label {
+        display: block;
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .dropdown-status,
+    .menu-date {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 44px;
+        min-height: 44px;
+        flex: none;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 8px;
+    }
+
+    .banner-welcome {
+        font-size: 22px;
+        overflow-wrap: anywhere;
+    }
+
+    .channel {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        gap: 6px;
+    }
+
+    .dashboard,
+    .task-all,
+    .settings {
+        font-size: 12px;
+        padding: 10px 6px;
+    }
+
+    .total,
+    .completed,
+    .pending {
+        padding: 12px;
+    }
+
+    .number {
+        font-size: 22px;
+    }
+
+    .recent-info,
+    .priority-info,
+    .high-priority-info,
+    .upcoming-tasks-info {
+        font-size: 18px;
+    }
+
+    .recent-list,
+    .high-priority-list,
+    .priority-list,
+    .upcoming-tasks-list {
+        font-size: 14px;
+        margin: 20px 10px;
+    }
+
+    /* Add Task modal */
+    .add-task-on {
+        padding: 8px;
+    }
+
+    .box {
+        width: 100%;
+        padding: 12px;
+        max-height: 95vh;
+        overflow-y: auto;
+    }
+
+    #task-title {
+        height: auto;
+        min-height: 44px;
+    }
+
+    #description {
+        min-height: 100px;
+        height: auto;
+    }
+
+    /* Stack Status and Due date neatly */
+    .status-duedate {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 12px;
+        height: auto;
+    }
+
+    .status,
+    .duedate {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 8px;
+        width: 100%;
+        min-width: 0;
+        flex: none;
+        height: auto;
+        margin: 0;
+    }
+
+    .duedate label {
+        display: block;
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .dropdown-status,
+    .menu-date {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 44px;
+        min-height: 44px;
+        flex: none;
+        margin: 0;
+    }
+
+    .priority-btn {
+        flex: 1 1 80px;
+        min-width: 0;
+        padding: 8px 4px;
+        font-size: 12px;
+    }
+
+    .cancel-btn,
+    .add-task-btn {
+        width: calc(50% - 5px);
+        text-align: center;
+        padding: 10px 4px;
+    }
+}
+
