@@ -283,12 +283,19 @@ The main files are organised as follows:
 ```text
 TaskForge/
 │
-├── product.html
+├── dashboard.html
 ├── all-tasks.html
+├── script1.js
+├── script2.js
+├── styles1.css
+├── styles2.css
+├── dashboard.png
+├── all-tasks.png
+├── add-tasks.png
 └── README.md
 ```
 
-- `product.html` — Contains the dashboard interface and task-entry modal.
+- `dashboard.html` — Contains the dashboard interface and task-entry modal.
 - `all-tasks.html` — Contains the task list, dynamically generated task cards, and task-management interactions.
 - `README.md` — Documents the project, its learning objectives, current features, and planned improvements.
 
@@ -300,7 +307,7 @@ The project may be reorganised as additional features are introduced.
 
 1. Clone or download the repository.
 2. Open the project folder in a code editor such as Visual Studio Code.
-3. Open `product.html` in a web browser.
+3. Open `dashboard.html` in a web browser.
 4. Use the task-entry interface to add a task.
 5. Explore the All Tasks page and test the available interactions.
 
