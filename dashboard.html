@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles1.css">
+    
+
+
+</head>
+<body class="body-dark">
+    <div class="container">
+        <nav class="navbar">
+            <a href="dashboard.html"><span class="banner-welcome">TaskForge</span></a>
+            <div class="nav-links">
+                <a class="dashboard" href="dashboard.html"><b>Dashboard</b></a>
+                <a class="task-all" href="all-tasks.html"><b>All Tasks</b></a>
+                <button class="add-tasks"><span><b>Add Task</b></span></button>
+            </div>
+        
+        </nav>
+        <br>
+            <div class="main-body">
+                
+
+                <div class="task-info">
+                    <div class="banner">
+                        <span class="banner-welcome">Welcome to TaskForge</span>
+                    </div>
+                </div>
+                <br>
+
+                <div class="task-details">
+                    
+                    <div class="total">
+                        <p><i class="fa-solid fa-list-check" style="color: rgb(224, 225, 227);"></i> <b>TOTAL TASKS</b></p>
+                        <span class="number">0</span>
+                    </div>
+                    <div class="completed">
+                        <p> <i class="fa-regular fa-circle-check" style="color: rgb(231, 233, 236);"> </i> <b>COMPLETED</b> </p>
+                        <span class="number">0</span>
+                    </div>
+                    <div class="pending">
+                        <p><i class="fa-regular fa-clock" style="color: rgb(238, 239, 240);"></i> <b>IN PROGRESS</b></p>
+                        <span class="number">0</span>
+                    
+                    </div>
+                </div>
+                <div class="container2">
+
+                    <div class="container-up">
+                        <div class="recent">
+                            <p class="recent-info"><b>Recent Tasks</b></p>
+                            <div class="recent-items">
+                                <p class="recent-list">No recent tasks. Add a task to get started.</p>
+                            </div>
+                        </div>
+
+                        <div class="priority">
+                            <p class="priority-info"><b>Priority Summary</b></p>
+                            <div class="priority-items">
+                                <p class="priority-list">Add tasks to see your priority breakdone</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="container-down">
+                        <div class="high-priority">
+                            <p class="high-priority-info"><b>High Priority Tasks</b></p>
+                            <div class="high-priority-items">
+                                <p class="high-priority-list">No high priority tasks.</p>
+                            </div>
+                        </div>
+
+                        <div class="upcoming-tasks">
+                            <p class="upcoming-tasks-info"><b>Upcoming Tasks</b></p>
+                            <div class="upcoming-tasks-items">
+                                <p class="upcoming-tasks-list">No upcoming tasks with due dates.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                    
+
+                </div>
+                
+            </div>
+
+            
+
+    </div>
+
+    <div class="add-task-off">
+        <div class="box">
+
+        
+            <form>
+            <p><b>Add New Task</b></p>
+            <p>Fill in the details to create a task</p>
+
+            <label for="task-title">Task Title</label><br>
+            <br>
+            <input type="text" id="task-title" placeholder="e.g Finish Calculus assignment"><br>
+            <p class="error-note" style="visibility: hidden;">Task title is mandatory</p>
+            <label for="description">Description</label><br>
+            <br>
+            <textarea rows='10' cols='50' id="description" placeholder="Add more details (optional)"></textarea><br>
+            <label for="priority">Priority</label><br>
+            <br>
+            <div class="priority-buttons">
+                <button type="button" class="priority-btn" value="High">High</button>
+                <button type="button" class="priority-btn" value="Medium">Medium</button>
+                <button type="button" class="priority-btn" value="Low">Low</button>
+            </div>
+            <br>
+            <div class="status-duedate">
+                <div class="status">
+                    <label id="status">Status</label>
+                    <select class="dropdown-status">
+                        <option selected>Pending</option>
+                        <option>In Progress</option>
+                    </select>
+                </div>
+                
+                <div class="duedate">
+                    <label for="due-date" class="duedate">Due date</label>
+                    <input type="date" id="due-date" class="menu-date">
+                </div>
+                
+            </div>
+            
+            <br><br>
+            <button type="button" class="cancel-btn">Cancel</button>
+            <button type="button" class="add-task-btn">Add Task</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const addtaskmenu=document.querySelector('.add-task-off');
+    const addtaskbtn=document.querySelector('.add-tasks');
+    const prioritylevel=document.querySelectorAll('.priority-btn');
+    const submitbtn=document.querySelector('.add-task-btn');
+    const hiddenErrornote=document.querySelector('.error-note');
+    const cancelbtn=document.querySelector('.cancel-btn');
+    const taskform=document.querySelector('.add-task-form');
+
+    
+    addtaskbtn.addEventListener("click",function(){
+        addtaskmenu.classList.toggle("add-task-on");
+        addtaskmenu.classList.toggle("add-task-off");
+    })
+
+    cancelbtn.addEventListener("click",function(event){
+        event.preventDefault();
+        addtaskmenu.classList.remove("add-task-on");
+        addtaskmenu.classList.add("add-task-off");
+        taskform.reset();
+
+    })
+
+    for (let i=0 ;i<prioritylevel.length;i++){
+        prioritylevel[i].addEventListener("click",function(){
+
+            for (let j=0;j<prioritylevel.length;j++){
+                prioritylevel[j].classList.remove("priority-btn-selected");
+            }
+
+
+
+            prioritylevel[i].classList.add("priority-btn-selected");
+
+        })
+
+    }
+
+    submitbtn.addEventListener('click',function(event){
+        event.preventDefault();
+
+        const taskTitle=document.querySelector('#task-title');
+        const taskDescription=document.querySelector('#description').value.trim();
+        const statusTask=document.querySelector('.dropdown-status').value;
+        const dueDate=document.querySelector('#due-date').value;
+        const selectedPriority = document.querySelector('.priority-btn-selected')?.value || 'High';
+
+        if ( taskTitle.value && taskTitle.value.trim()!='')
+        {
+            taskTitle.classList.remove('error-border');
+
+            const params=new URLSearchParams({
+                Title:taskTitle.value.trim(),
+                Description:taskDescription,
+                Priority:selectedPriority,
+                Status:statusTask || "Pending",
+                Due:dueDate
+            })
+
+            window.location.href="all-tasks.html?"+params.toString();
+
+        }
+        else{
+            taskTitle.classList.add('error-border');
+            hiddenErrornote.style.visibility='visible';
+            hiddenErrornote.style.color='red';
+            hiddenErrornote.style.lineHeight='1.3';
+
+
+            taskTitle.addEventListener('input',function(){
+                hiddenErrornote.style.visibility='hidden';
+                taskTitle.classList.remove('error-border');
+            })
+            
+        }
+
+
+
+        
+
+    })
+
+
+
+
+    
+
+
+    
+    
+    
+
+
+</script>
+    
+    
+</body>
+
+</html>
