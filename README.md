@@ -15,6 +15,9 @@ This project is a work in progress. My primary goal is to learn how real-world w
 ### All Tasks
 ![TaskForge All Tasks](all-tasks.png)
 
+### Add Tasks
+![TaskForge Add Tasks](add-tasks.png)
+
 
 ## Table of Contents
 
