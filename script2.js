@@ -1,8 +1,8 @@
-const body=document.querySelector('.body-dark');
-const addtaskmenu=document.querySelector('.add-task-off');
-const addtaskbtn=document.querySelector('.add-task-btn');
-const prioritylevel=document.querySelectorAll('.priority-btn');
-const cancelbtn=document.querySelector('.cancel-btn');
+   const body=document.querySelector('.body-dark');
+    const addtaskmenu=document.querySelector('.add-task-off');
+    const addtaskbtn=document.querySelector('.add-task-btn');
+    const prioritylevel=document.querySelectorAll('.priority-btn');
+    const cancelbtn=document.querySelector('.cancel-btn');
 
     
     addtaskbtn.addEventListener("click",function(){
@@ -41,7 +41,9 @@ const cancelbtn=document.querySelector('.cancel-btn');
     const inprogresstasknum=document.querySelector('.in-progress-task-num');
     const taskform=document.querySelector('.add-task-form');
     const hiddenErrornote=document.querySelector('.error-note');
-   
+    const bodycontainer=document.querySelector('.body-dark');
+    const darklightmode=document.querySelector('.dark-light-mode');
+    const addtaskdesc=document.querySelector('.add-task-desc');
 
 
 
@@ -217,6 +219,27 @@ const cancelbtn=document.querySelector('.cancel-btn');
 
     }
 
+    darklightmode.addEventListener("click",function(event){
+        event.preventDefault();
+        bodycontainer.classList.toggle('body-light');
+        bodycontainer.classList.toggle('body-dark');
+
+        if (bodycontainer.classList.contains('body-light')){
+            darklightmode.textContent='Dark Mode'
+            darklightmode.style.backgroundColor='black';
+            darklightmode.style.color='white';
+            addtaskdesc.style.color='black';
+        }
+        else{
+            darklightmode.textContent='Light Mode';
+            darklightmode.style.backgroundColor='white';
+            darklightmode.style.color='black';
+            addtaskdesc.style.color='white';
+        }
+    })
+
+
+
     submittask.addEventListener('click',function(event){
         event.preventDefault();
 
@@ -260,10 +283,3 @@ const cancelbtn=document.querySelector('.cancel-btn');
     if (TITLE && TITLE.trim()!=''){
         createCard(mainbody,taskform,TITLE,DETAILS,IMPORTANCE,STATUS,DUEDATE);
     }
-
-
-    
-
-
-
-</script>  
