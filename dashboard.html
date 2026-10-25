@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
+    <title>Task Forge</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="styles1.css">
-    
-    
-
-
 </head>
 <body class="body-dark">
     <div class="container">
@@ -18,14 +14,13 @@
             <div class="nav-links">
                 <a class="dashboard" href="dashboard.html"><b>Dashboard</b></a>
                 <a class="task-all" href="all-tasks.html"><b>All Tasks</b></a>
+                <button class="dark-light-mode"><b>Light mode</b></button>
                 <button class="add-tasks"><span><b>Add Task</b></span></button>
             </div>
         
         </nav>
-        <br>
+        <br><br>
             <div class="main-body">
-                
-
                 <div class="task-info">
                     <div class="banner">
                         <span class="banner-welcome">Welcome to TaskForge</span>
@@ -55,14 +50,14 @@
                         <div class="recent">
                             <p class="recent-info"><b>Recent Tasks</b></p>
                             <div class="recent-items">
-                                <p class="recent-list">No recent tasks. Add a task to get started.</p>
+                                <p class="recent-list" style="color: white;">No recent tasks. Add a task to get started.</p>
                             </div>
                         </div>
 
                         <div class="priority">
                             <p class="priority-info"><b>Priority Summary</b></p>
                             <div class="priority-items">
-                                <p class="priority-list">Add tasks to see your priority breakdone</p>
+                                <p class="priority-list" style="color: white;">Add tasks to see your priority breakdone</p>
                             </div>
                         </div>
 
@@ -72,14 +67,14 @@
                         <div class="high-priority">
                             <p class="high-priority-info"><b>High Priority Tasks</b></p>
                             <div class="high-priority-items">
-                                <p class="high-priority-list">No high priority tasks.</p>
+                                <p class="high-priority-list" style="color: white;">No high priority tasks.</p>
                             </div>
                         </div>
 
                         <div class="upcoming-tasks">
                             <p class="upcoming-tasks-info"><b>Upcoming Tasks</b></p>
                             <div class="upcoming-tasks-items">
-                                <p class="upcoming-tasks-list">No upcoming tasks with due dates.</p>
+                                <p class="upcoming-tasks-list" style="color: white;">No upcoming tasks with due dates.</p>
                             </div>
                         </div>
 
@@ -102,17 +97,17 @@
 
         
             <form class="add-task-form">
-            <p><b>Add New Task</b></p>
-            <p>Fill in the details to create a task</p>
+            <p style="color: white;"><b>Add New Task</b></p>
+            <p style="color: white;">Fill in the details to create a task</p>
 
-            <label for="task-title">Task Title</label><br>
+            <label for="task-title" style="color: white;">Task Title</label><br>
             <br>
             <input type="text" id="task-title" placeholder="e.g Finish Calculus assignment"><br>
             <p class="error-note" style="visibility: hidden;">Task title is mandatory</p>
-            <label for="description">Description</label><br>
+            <label for="description" style="color: white;">Description</label><br>
             <br>
             <textarea rows='10' cols='50' id="description" placeholder="Add more details (optional)"></textarea><br>
-            <label for="priority">Priority</label><br>
+            <label for="priority" style="color: white;">Priority</label><br>
             <br>
             <div class="priority-buttons">
                 <button type="button" class="priority-btn" value="High">High</button>
@@ -122,7 +117,7 @@
             <br>
             <div class="status-duedate">
                 <div class="status">
-                    <label id="status">Status</label>
+                    <label id="status" style="color: white;">Status</label>
                     <select class="dropdown-status">
                         <option selected>Pending</option>
                         <option>In Progress</option>
@@ -130,7 +125,7 @@
                 </div>
                 
                 <div class="duedate">
-                    <label for="due-date" class="duedate">Due date</label>
+                    <label for="due-date" class="duedate" style="color: white;">Due date</label>
                     <input type="date" id="due-date" class="menu-date">
                 </div>
                 
@@ -145,6 +140,7 @@
         </div>
 
     </div>
+
 
 <script src="script1.js" defer></script>
 
