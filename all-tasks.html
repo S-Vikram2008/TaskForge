@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Tasks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="styles2.css">
-  
-    
 </head>
-
 <body class="body-dark">
     
         <nav class="navbar">
@@ -17,6 +13,7 @@
                 <div class="nav-links">
                     <a class="dashboard" href="dashboard.html"><b>Dashboard</b></a>
                     <a class="task-all" href="all-tasks.html"><b>All Tasks</b></a>
+                    <button class="dark-light-mode"><b>Light mode</b></button>
                     <button type="button" class="add-task-btn">Add Tasks</button>
                 </div>
             
@@ -40,10 +37,10 @@
                 </div>
                 <div class="desc">
                     <div class="task-title">
-                        <p style="line-height: 0.5px;">Total Tasks</p>
+                        <p style="line-height: 0.5px;color: white;">Total Tasks</p>
                     </div>
                     <div class="task-num">
-                        <p class="total-task-num" style="line-height: 0.5px;font-size: 30px;">0</p>
+                        <p class="total-task-num" style="line-height: 0.5px;font-size: 30px;color: white;">0</p>
                     </div>
                 </div>
             </div>
@@ -54,10 +51,10 @@
                 </div>
                 <div class="desc">
                     <div class="task-title">
-                        <p style="line-height: 0.5px;">Completed</p>
+                        <p style="line-height: 0.5px;color: white;">Completed</p>
                     </div>
                     <div class="task-num">
-                        <p class="completed-task-num" style="line-height: 0.5px;font-size: 30px;">0</p>
+                        <p class="completed-task-num" style="line-height: 0.5px;font-size: 30px;color: white;">0</p>
                     </div>
                 </div>
             </div>
@@ -67,10 +64,10 @@
                 </div>
                 <div class="desc">
                     <div class="task-title">
-                        <p style="line-height: 0.5px;">In Progress</p>
+                        <p style="line-height: 0.5px;color: white;">In Progress</p>
                     </div>
                     <div class="task-num">
-                        <p class="in-progress-task-num" style="line-height: 0.5px;font-size: 30px;">0</p>
+                        <p class="in-progress-task-num" style="line-height: 0.5px;font-size: 30px;color: white;">0</p>
                     </div>
                 </div>
             </div>
@@ -80,10 +77,10 @@
                 </div>
                 <div class="desc">
                     <div class="task-title">
-                        <p style="line-height: 0.5px;">Pending</p>
+                        <p style="line-height: 0.5px;color: white;">Pending</p>
                     </div>
                     <div class="task-num">
-                        <p class="pending-task-num" style="line-height: 0.5px;font-size: 30px;">0</p>
+                        <p class="pending-task-num" style="line-height: 0.5px;font-size: 30px;color: white;">0</p>
                     </div>
                 </div>
             </div>
@@ -101,18 +98,18 @@
 
         
             <form class="add-task-form">
-            <p><b>Add New Task</b></p>
-            <p>Fill in the details to create a task</p>
+            <p style="color: white;"><b>Add New Task</b></p>
+            <p style="color: white;">Fill in the details to create a task</p>
 
-            <label for="task-title">Task Title</label><br>
+            <label for="task-title" style="color: white;">Task Title</label><br>
             <br>
             <input type="text" id="task-title" placeholder="e.g Finish Calculus assignment"><br>
 
             <p class="error-note" style="visibility: hidden;">Task title is mandatory</p>
-            <label for="description">Description</label><br>
+            <label for="description" style="color: white;" >Description</label><br>
             <br>
             <textarea rows='10' cols='50' id="description" placeholder="Add more details (optional)"></textarea><br>
-            <label for="priority">Priority</label><br>
+            <label for="priority" style="color: white;">Priority </label><br>
             <br>
             <div class="priority-buttons">
                 <button type="button" class="priority-btn" value="High">High</button>
@@ -122,7 +119,7 @@
             <br>
             <div class="status-duedate">
                 <div class="status">
-                    <label id="status">Status</label>
+                    <label id="status" style="color: white;">Status</label>
                     <select class="dropdown-status">
                         <option selected>Pending</option>
                         <option>In Progress</option>
@@ -130,7 +127,7 @@
                 </div>
                 
                 <div class="duedate">
-                    <label for="due-date" class="duedate">Due date</label>
+                    <label for="due-date" class="duedate" style="color: white;">Due date</label>
                     <input type="date" id="due-date" class="menu-date">
                 </div>
                 
@@ -138,16 +135,13 @@
             
             <br><br>
             <button type="button" class="cancel-btn">Cancel</button>
-            <button type="button" class="submit-task-entry">Add Task</button>
+            <button type="button" class="submit-task-entry" style="background-color:#8B5CF6;">Add Task</button>
 
             </form>
 
         </div>
 
     </div>
-    
-    
-    
 <script src="script2.js" defer></script>
 </body>
 </html>
