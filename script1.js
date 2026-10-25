@@ -1,10 +1,12 @@
-const addtaskmenu=document.querySelector('.add-task-off');
+    const addtaskmenu=document.querySelector('.add-task-off');
     const addtaskbtn=document.querySelector('.add-tasks');
     const prioritylevel=document.querySelectorAll('.priority-btn');
     const submitbtn=document.querySelector('.add-task-btn');
     const hiddenErrornote=document.querySelector('.error-note');
     const cancelbtn=document.querySelector('.cancel-btn');
     const taskform=document.querySelector('.add-task-form');
+    const darklightmode=document.querySelector('.dark-light-mode');
+    const mainbody=document.querySelector('body');
 
     
     addtaskbtn.addEventListener("click",function(){
@@ -34,6 +36,24 @@ const addtaskmenu=document.querySelector('.add-task-off');
         })
 
     }
+
+    darklightmode.addEventListener('click',function(event){
+        event.preventDefault();
+        mainbody.classList.toggle('body-light');
+        mainbody.classList.toggle('body-dark');
+        
+        if (mainbody.classList.contains('body-light')){
+            darklightmode.textContent="Dark mode";
+            darklightmode.style.backgroundColor='black';
+            darklightmode.style.color="white";
+        }
+        else{
+            darklightmode.textContent="Light mode";
+            darklightmode.style.backgroundColor='white';
+            darklightmode.style.color="black";
+        }
+
+    })
 
     submitbtn.addEventListener('click',function(event){
         event.preventDefault();
@@ -78,3 +98,4 @@ const addtaskmenu=document.querySelector('.add-task-off');
         
 
     })
+
