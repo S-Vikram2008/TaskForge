@@ -16,7 +16,7 @@ This project is a work in progress. My primary goal is to learn how real-world w
 ![TaskForge All Tasks](screenshots/all-tasks.png)
 
 ### Add Tasks
-![TaskForge Add Tasks](screenshots/add-tasks.png)
+![TaskForge Add Tasks](screenshots/add-task.png)
 
 ### Dashboard - Light mode
 ![TaskForge Dashboard](screenshots/dashboard-lightmode.png)
