@@ -301,17 +301,28 @@ The main files are organised as follows:
 
 ```text
 TaskForge/
-│
-├── dashboard.html
-├── all-tasks.html
-├── script1.js
-├── script2.js
-├── styles1.css
-├── styles2.css
-├── dashboard.png
-├── all-tasks.png
-├── add-tasks.png
-└── README.md
+|
+|--- dashboard.html
+|--- all-tasks.html
+|
+|--- styles1.css
+|--- styles2.css
+|
+|--- script1.js
+|--- script2.js
+|
+|--- README.md
+|
+|--- screenshots/
+     |
+     |--- add-task.png
+     |--- add-task-title-empty-error.png
+     |--- all-tasks.png
+     |--- all-tasks-lightmode.png
+     |--- dashboard.png
+     |--- dashboard-lightmode.png
+     |--- task-added.png
+     |--- task-completed.png
 ```
 
 - `dashboard.html` — Contains the dashboard interface and task-entry modal.
