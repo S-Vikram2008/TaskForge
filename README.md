@@ -9,7 +9,7 @@ This project is a work in progress. My primary goal is to learn how real-world w
 ---
 ## Screenshots
 
-### Dashboard
+### Dashboard - Dark mode
 ![TaskForge Dashboard](dashboard.png)
 
 ### All Tasks
@@ -17,6 +17,25 @@ This project is a work in progress. My primary goal is to learn how real-world w
 
 ### Add Tasks
 ![TaskForge Add Tasks](add-tasks.png)
+
+### Dashboard - Light mode
+![TaskForge Dashboard](dashboard-lightmode.png)
+
+### All Tasks - Light mode
+![TaskForge All Tasks](all-tasks-lightmode.png)
+
+### Adding a Task
+![TaskForge Add Tasks](add-task.png)
+
+### Trying to Add a task with empty title
+![TaskForge All Tasks](add-task-title-empty-error.png)
+
+### Displaying Task card
+![TaskForge All Tasks](task-added.png)
+
+### Completing a task
+![TaskForge All Tasks](task-completed.png)
+
 
 
 ## Table of Contents
