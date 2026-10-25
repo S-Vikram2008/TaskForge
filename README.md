@@ -7,16 +7,6 @@ TaskForge is a personal practice project built to strengthen my understanding of
 This project is a work in progress. My primary goal is to learn how real-world web interfaces are structured, styled, and made interactive through JavaScript.
 
 -----------
-
-🚀 Live Demo
-
-Try TaskForge here:
-
-🚀 [**Launch TaskForge**](https://s-vikram2008.github.io/TaskForge/dashboard.html)
-
-Explore the dashboard and task management interface directly in your browser — no installation required!
-
------------
 ## Screenshots
 
 ### Dashboard - Dark mode
