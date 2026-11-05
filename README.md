@@ -36,6 +36,9 @@ This project is a work in progress. My primary goal is to learn how real-world w
 ### Completing a task
 ![TaskForge All Tasks](screenshots/task-completed.png)
 
+### Settings page
+![TaskForge All Tasks](screenshots/settings.png)
+
 
 
 ## Table of Contents
