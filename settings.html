@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles3.css">
+    <body>
+    <nav class="nav-bar">
+        <a href="product.html"><span class="banner-welcome">TaskForge</span></a>
+        <div class="nav-links">
+            <a  class="dashboard" href="product.html"><b>Dashboard</b></a>
+            <a class="task-all" href="all-tasks.html"><b>All Tasks</b></a>
+            <a class="settings" href="settings.html"><b>Settings</b></a>
+            <button class="dark-light-mode"><b>Light mode</b></button>
+        </div>
+    </nav>
+    <br>
+    <div class="banner">
+        <span class="settings-logo">Settings</span>
+        <p style="color: #F1F1F1;line-height: 1.3px;font-family: Arial, sans-serif;" class="preference-text">Manage your preferences</p>
+    </div>
+
+    <div class="profile">
+        <h3>Profile Settings</h3>
+        <p>Name</p>
+        <input  class="name-entry" type="text" width="100%" height="50px" value="TaskForge User" readonly>
+        <p>Email address</p>
+        <input class="email-entry" type="text" width="100%" height="50px" value="TaskForgeUser@example.com" readonly><br>
+        <div class="edit-profile">
+            <button class="edit-btn">Edit Profile</button>
+        </div>
+        
+    </div>
+    <br>
+    
+
+    <div class="task-preferences">
+        <h3>Task Preferences</h3>
+        <br>
+        <div class="task-priority">
+            <span>Default task priority</span>
+            <select class="change-priority" disabled>
+                <option selected >High</option>
+                <option>Medium</option>
+                <option>Low</option>
+            </select> 
+        </div>
+        <br>
+        <div class="task-status">
+            <span>Default task Status</span>
+            <select class="change-status" disabled>
+                <option selected>Pending</option>
+                <option>In Progress</option>
+            </select>
+        </div>
+        <br>
+        <div class="edit-status">
+            <button class="edit-status-btn">Edit Status</button>
+        </div>
+    </div>
+        
+
+    </div>
