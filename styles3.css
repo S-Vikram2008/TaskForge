@@ -170,3 +170,185 @@
             color: black;
             transition: 0.5s ease;
         }
+       /* TABLET - 1024px               */
+
+
+@media (max-width: 1024px) {
+
+    .profile,
+    .task-preferences {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .task-priority,
+    .task-status {
+        gap: 20px;
+    }
+
+    .change-priority,
+    .change-status {
+        width: 100%;
+    }
+
+}
+
+
+
+/* SMALL TABLETS - 768px         */
+
+
+@media (max-width: 768px) {
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .banner-welcome,
+    .settings-logo {
+        font-size: 26px;
+    }
+
+    .profile,
+    .task-preferences {
+        margin: 0;
+    }
+
+    .task-priority,
+    .task-status {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .change-priority,
+    .change-status {
+        width: 100%;
+    }
+
+    .edit-profile,
+    .edit-status {
+        justify-content: center;
+    }
+
+    .edit-btn,
+    .edit-status-btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE - 480px                */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 8px;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .dashboard,
+    .task-all,
+    .settings {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    button.dark-light-mode {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner {
+        padding: 10px 5px;
+    }
+
+    .banner-welcome,
+    .settings-logo {
+        font-size: 23px;
+    }
+
+    .preference-text {
+        font-size: 13px;
+        line-height: 1.4 !important;
+    }
+
+    .profile,
+    .task-preferences {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .profile h3,
+    .task-preferences h3 {
+        font-size: 17px;
+    }
+
+    .profile p,
+    .task-priority span,
+    .task-status span {
+        font-size: 14px;
+    }
+
+    .name-entry,
+    .email-entry {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .change-priority,
+    .change-status {
+        font-size: 14px;
+    }
+
+    .edit-btn,
+    .edit-status-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+
+/* VERY SMALL PHONES - 360px     */
+
+
+@media (max-width: 360px) {
+
+    .nav-links {
+        gap: 6px;
+    }
+
+    .dashboard,
+    .task-all,
+    .settings {
+        font-size: 11px;
+        padding: 9px 8px;
+    }
+
+    .banner-welcome,
+    .settings-logo {
+        font-size: 21px;
+    }
+
+    .profile,
+    .task-preferences {
+        padding: 10px;
+    }
+
+}
